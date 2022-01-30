@@ -57,4 +57,6 @@ print("XOR=== nulisnya(^)")
 print("a xor a = ",a ^ a)
 print("a xor b = ",a ^ b)#jika hanya ada 1 yg benar mk benar
 print("b xor b = ",b ^ b)
-
+-------------------------------------------------------------
+#sorry for this part i've mistaken about how git works ;)
+-------------------------------------------------------------
