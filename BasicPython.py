@@ -60,3 +60,27 @@ print("b xor b = ",b ^ b)
 -------------------------------------------------------------
 #sorry for this part i've mistaken about how git works ;)
 -------------------------------------------------------------
+#what i've learned this time is about Comparation operation <,>,<=,>=,==,!=,is,is not
+-------------------------------------------------------------
+a=2
+b=5
+cek1 = a > 3
+cek2=a>=3
+cek3=a==3
+cek4=a!=3
+cek5=a is 3
+cek6=a is not 3
+cek7=a==b
+cek8=[]
+cek9=[]
+
+print("a > 3 =", cek1)#dapat berkerja pd syntax literal
+print("a >= 3 =", cek2)#dapat berkerja pd syntax literal
+print("a == 3 =", cek3)#dapat berkerja pd syntax literal
+print("a != 3 =", cek4)#dapat berkerja pd syntax literal
+#contoh perbandingan objek dan literal.  a == 3. a itu objek, 3 itu literal. gunakan == aja ben ra mumet
+print("a is 3 =", cek5)
+print("a is not 3 =", cek6)
+print("a == b =", cek7)
+print("cek8 is cek9 = ",cek8 is cek9)#id1 and id2, value1 and value2
+print("cek8 == cek9 = ",cek8 == cek9)#id1 or id2, value1 or value2
