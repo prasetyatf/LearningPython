@@ -84,3 +84,38 @@ print("a is not 3 =", cek6)
 print("a == b =", cek7)
 print("cek8 is cek9 = ",cek8 is cek9)#id1 and id2, value1 and value2
 print("cek8 == cek9 = ",cek8 == cek9)#id1 or id2, value1 or value2
+-------------------------------------------------------------
+#what i've learned this time is about List
+-------------------------------------------------------------
+data=["saya","adalah","tegar"]
+datas=data[0]
+#mengakses list
+print("data ke-0", data[0])
+print("data ke-(-2)", data[-2])
+print("mengakses data dengan data[a:b] = ", data[0:3])#[a=dimulai dari 0 : b=dimulai dari 0]
+#memotong list/slicing
+print("data ke-(1-3)", data[0:3])#dimulai dari data ke-0 sampai sebelum data ke-3
+print("data ke-(2-3)", data[1:3])#dimulai dari data ke-1 sampai sebelum data ke-3
+print("data2 sebelum data ke-1", data[:1])#[:b]dimulai dari tak hingga sampai sebelum data ke-1
+print("data2 sebelum data ke-1 dr blkng", data[:-1])#dimulai dari tak hingga sampai sebelum data data ke-(-1)
+print("memunculkan data ke-2 saja", data[1], data[1:2])#dimulai dari data ke-1 sampai sebelum data ke-2
+print("data2 ssudah data ke-1", data[1:])#dimulai dari data ke-1 sampai tak hingga
+#'+' dan '-' menunjukkan arah
+#menambah data
+data2=["ada","haha"]
+data3= data + data2
+data4= data2 + data
+apen=data4.append(666)
+apen2=data4.append(input("masukkan: "))
+print(data3)
+print(data4)
+#mengubah data
+data[0]="kamu"
+ubahdata=data
+print(ubahdata)
+#list dalam list
+gabdata=data,data2
+print(gabdata)
+#mengakses list dalam list
+aksesmulti=gabdata[1][1]
+print(aksesmulti)
