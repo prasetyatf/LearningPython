@@ -119,3 +119,16 @@ print(gabdata)
 #mengakses list dalam list
 aksesmulti=gabdata[1][1]
 print(aksesmulti)
+-------------------------------------------------------------
+#what i've learned this time is about If Else
+-------------------------------------------------------------
+data=[0,9,8,7,6,5]
+cek1=99
+cek2=int(input("masukkan angka = "))
+if cek1 in data:
+    print(cek1,"ada di data")
+elif cek2 in data:
+    print("data inputan pertama tidak ada. sedangkan", cek2, "ada di data")
+else:
+    print("semua data inputan tidak ada di dalam list")
+    
