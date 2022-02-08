@@ -131,4 +131,40 @@ elif cek2 in data:
     print("data inputan pertama tidak ada. sedangkan", cek2, "ada di data")
 else:
     print("semua data inputan tidak ada di dalam list")
-    
+-------------------------------------------------------------
+#what i've learned this time is about looping(for)
+-------------------------------------------------------------
+#iterate itu mengecek 1/1 objek lalu mengeksekusinya
+data1=[1,2,3,4]
+data2=["aku","adalah","tegar"]
+data3="tegar"
+for i in data1:#i adalah iterate, data1 adalah objek. maka objek hrs didefinisikan sedang iterate tidak
+    print(data1) #ngeprin isi data1 sejumlah data1    
+for i in data3: #t+e+g+a+r=5
+    print(data2)
+for i in range(1,6,2):#dimulai dr 1, berakir <6, penambahan 2
+    print(i)
+#note: masih banyak objek lain selain 'in range'
+-------------------------------------------------------------
+#what i've learned this time is about looping(while)
+-------------------------------------------------------------
+#dalam while juga berlaku continue,break,pass
+x=0#integer
+start=True#boolean
+while x<=5:#perulangan
+    print(x)#0
+    x+=1#x+1
+    #dst
+while start:
+    print(x)
+    if x == 6:
+        start=False
+    x+=1
+while start:
+    print(x)
+    if x == 6:
+        start=False
+    x+=1
+else:
+    print("selesai")
+
