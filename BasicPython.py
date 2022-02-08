@@ -167,4 +167,45 @@ while start:
     x+=1
 else:
     print("selesai")
+-------------------------------------------------------------
+#what i've learned this time is about looping(while)
+-------------------------------------------------------------
+#break = menghentikan loop
+#continue = melanjutkan looping ke iterator selanjutnya dan melewati iterator saat ini
+#pass = tidak melakukan apaapa
+print("continue=======")
+for i in range(1,11):
+    if i == 4:
+        print("ini adalah", 4)
+        continue#ketika i=4, alur eksekusi dikembalikan ke baris for atas
+    print(i)  
 
+print("break=======")
+for x in range(1,11):
+    if x == 4:
+        print("ini adalah", 4)
+        break#ketika i=4, alur eksekusi for berhenti/keluar
+    print(x)
+
+print("pass=======")
+for m in range(1,11):
+    if m == 4:
+        print("ini adalah", 4)
+        pass#bingung??
+    print(m)
+
+print("break=======")
+for i in range(7,11):
+    if i == 9:
+        print("ini adalah", 9,"break---")
+        break
+    print(i)
+
+print("continue=======")
+for i in range(7,10):
+    if i == 8:
+        print("ini adalah", 8)
+        continue
+    print(i)
+else:
+    print("selesai")
