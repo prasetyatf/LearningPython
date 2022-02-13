@@ -248,3 +248,98 @@ def kuadrat(arg):
 kuadrat(3)
 a = kuadrat(5)
 print(a)#ini akan menghasilkan 'None' jika tidak ada return di dalam def
+-------------------------------------------------------------
+#what i've learned this time is about string
+-------------------------------------------------------------
+print('"hallo"')
+print("jum'at")
+print('jum\'at')#memakai backslash untuk menampilkan karakterberikutnya
+print('C:\\user\\tegar')#memakai backslash untuk menampilkan karakterberikutnya
+print('jauh\tan')#\t adalah tab
+print('deket \ban')#\b adalah backspace
+print('baris pertama.\n baris kedua')#\n new line, LF
+print('baris pertama.\r baris kedua')#\n new line, CR
+
+#string literal atau raw
+print(r'C:\user\tegar')
+print(r"""
+
+nama: tegar
+hobi: coding
+""")
+
+#string operation and manipulation
+a = "aku"
+b = "adalah"
+c = a+" "+b #concatenate
+print(c)
+print(len(c))#menghitung karakter
+
+v = 'asdF'
+m = 'd' in v#mengecek komponen
+print("apakah d ada di v?", m)
+n = 'c' not in v
+print("apakah c tidak ada di string?", n)
+print("tes"*5)#mengulang string
+print("index ke-0: ", v[0])#var string juga dianggap list
+r = c.count("a")#operator dalam bentuk method
+print(r)
+upper = v.upper()#method upper case
+print(upper)
+print(v.lower())#method lower case
+
+#pengecekkan dengan isX
+#isalpha() = untuk mengecek semuanya hruf
+#isalnum() = untuk mengecek huruf atau angka
+#isdecimal() = untuk mengecek angka
+#isspace() = untuk mengecek spasi, tab, newline \n
+#istitle() = untuk mengecek semua kata dimulai dengan huruf besar
+#islower()
+#isupper()
+o = "tegar"
+print("apakah var o terdiri dari huruf atau angka:", o.isalnum())
+print("apakah var o terdiri dari huruf:", o.isalpha())
+
+#startswith() dan endswith()
+data = "aku adalah tegar"
+print("apakah isi var data dimulai dg \"aku\"=", data.startswith("aku"))
+print("apakah isi var data diakhiri dg \"tegar\"=", data.endswith("tegar"))
+
+#penggabungan komponen join(), pemisahan komponen split()
+data1 = ['aku','adalah','tegar']
+data2 = 'aku adalah tegar'
+join = ' '.join(data1)#.join(list)
+print(data1,'dijoin menjadi =', join)
+split = data2.split(' ')#.split(str)
+print(join,'displit menjadi =', split)
+
+#alokasi karakter rjust(), ljust(), center()
+kanan = "kanan".rjust(10,"+")
+print(kanan)
+kiri = "kiri".ljust(10,"+")
+print(kiri)
+tengah = "tengah".center(10,"+")
+print(tengah)
+
+#strip()
+biasa = "---ini strip---"
+strip = biasa.strip("-")
+print("ini sebelum distrip =", biasa, "ini sesudah distrip = ", strip)
+
+#placeholder {}
+aa = 5000
+bb = 5000000
+cc = 123.456
+dd = 10
+ee = -10
+ff = 0.12345
+print(f"harga sayur bayem adalah {aa}")
+print(f"harga 5 sayur bayem adalah {aa*5}")#placeholder dapat digunakan operasi
+print(f"harga sayur bayem adalah {aa:,}")#bilangan ordo ribuan
+print(f"harga sayur bayem adalah {bb:,}")#bilangan ordo jutaan
+print(f"harga sayur bayem adalah {cc:.2f}")#menampilkan 2 angka di belakang koma
+print(f"harga sayur bayem adalah {cc:07.2f}")#menampilkan leading zero
+print(f"harga sayur bayem adalah {dd:+d}")#menampilkan tanda +
+print(f"harga sayur bayem adalah {ee}")#menampilkan tanda - scr default
+print(f"harga sayur bayem adalah {ff:%}")#menampilkan persen
+print(f"harga sayur bayem adalah {ff:.2%}")#menampilkan persen dg 2 angka di belakang koma
