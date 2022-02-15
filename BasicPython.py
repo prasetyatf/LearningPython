@@ -343,3 +343,20 @@ print(f"harga sayur bayem adalah {dd:+d}")#menampilkan tanda +
 print(f"harga sayur bayem adalah {ee}")#menampilkan tanda - scr default
 print(f"harga sayur bayem adalah {ff:%}")#menampilkan persen
 print(f"harga sayur bayem adalah {ff:.2%}")#menampilkan persen dg 2 angka di belakang koma
+-------------------------------------------------------------
+#what i've learned this time is about tuple(i learned from a book named Python Basic A Self-Teaching Introduction by H.Bhasin)
+-------------------------------------------------------------
+#tupple
+(p,o,i)=(2,'tuple itu heterogen', 3.5)
+(z,x)=(0,9)
+(a,b,c)=(2,3,4)
+(a,b,c)=(a,c,b)
+
+print(f"tuple itu berisi data heterogen{p,o,i}")
+print(f"swap tuple 3 yg dibelakang saja {a,b,c}")
+print(f"menggabungkan tuple{(a,b,c)+(z,x)}")
+
+#tuple itu imuteable
+tup = (1,2)
+"""tup[1] = 4#error
+print(tup[1])"""
