@@ -360,3 +360,31 @@ print(f"menggabungkan tuple{(a,b,c)+(z,x)}")
 tup = (1,2)
 """tup[1] = 4#error
 print(tup[1])"""
+-------------------------------------------------------------
+#what i've learned this time is about Set
+-------------------------------------------------------------
+#set atau himpunan
+a = {2,'hai', 3.5}#data2 heterogen
+print(a)#data2 di set tidak memerhatikan urutan
+
+b = a.add('ini baru')
+print(a)
+
+c = a.add('ini baru')#menambahkan data yang sama
+print(a)#set tidak memerhatikan jumlah data berapa, tapi data sudah ada atau belum
+
+#print(a('hai')) Set tidak dapat diakses kecuali pakai loop
+
+#set atau himpunan berlaku sama seperti di matematika
+genap = {2,4,6,8}
+ganjil = {1,3,5,7}
+bulat = {1,2,3,4}
+#ini  error mm = genap + ganjil
+
+print(f"genap union ganjil = {genap.union(ganjil)}")
+print(f"genap intersect bulat = {genap.intersection(bulat)}")
+#print(genap + ganjil) ini error
+
+#mengakses set dengan loop
+for v in a:
+    print(v)
