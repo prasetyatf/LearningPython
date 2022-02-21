@@ -388,3 +388,25 @@ print(f"genap intersect bulat = {genap.intersection(bulat)}")
 #mengakses set dengan loop
 for v in a:
     print(v)
+-------------------------------------------------------------
+#what i've learned this time is about dictionary
+-------------------------------------------------------------
+#tipe data dictionary
+member1 = {"no":1, "nama":"tegar", "tinggi":173.4}
+
+member2 = {"no":2, "nama":"prasetya", "tinggi":175}
+
+print(member1.keys())#menampilkan seluruh keys
+print(member1.values())#menampilkan seluruh value
+print(member1["nama"])#mengakses dictionary menggunakan key
+
+semuamember = {1:member1, 2:member2}
+dataheterogen = {"no":1, 0:2, "float":3.14, 3:member1}#keysnya heterogen dan valuesnya heterogen
+
+print(semuamember.values())
+print(semuamember[1])#menampilkan key kyk index list
+
+print(dataheterogen.keys())
+print(dataheterogen.values())
+print(dataheterogen[3])
+#print(member1 + member2) ini error :D
