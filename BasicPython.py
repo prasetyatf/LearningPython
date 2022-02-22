@@ -87,12 +87,14 @@ print("cek8 == cek9 = ",cek8 == cek9)#id1 or id2, value1 or value2
 -------------------------------------------------------------
 #what i've learned this time is about List
 -------------------------------------------------------------
-data=["saya","adalah","tegar"]
-datas=data[0]
+data = ["saya","adalah","tegar"]
+datas = data[0]
+
 #mengakses list
 print("data ke-0", data[0])
 print("data ke-(-2)", data[-2])
 print("mengakses data dengan data[a:b] = ", data[0:3])#[a=dimulai dari 0 : b=dimulai dari 0]
+
 #memotong list/slicing
 print("data ke-(1-3)", data[0:3])#dimulai dari data ke-0 sampai sebelum data ke-3
 print("data ke-(2-3)", data[1:3])#dimulai dari data ke-1 sampai sebelum data ke-3
@@ -101,24 +103,42 @@ print("data2 sebelum data ke-1 dr blkng", data[:-1])#dimulai dari tak hingga sam
 print("memunculkan data ke-2 saja", data[1], data[1:2])#dimulai dari data ke-1 sampai sebelum data ke-2
 print("data2 ssudah data ke-1", data[1:])#dimulai dari data ke-1 sampai tak hingga
 #'+' dan '-' menunjukkan arah
+
 #menambah data
-data2=["ada","haha"]
-data3= data + data2
-data4= data2 + data
-apen=data4.append(666)
-apen2=data4.append(input("masukkan: "))
+data2 = ["ada","haha"]
+data3 = data + data2
+data4 = data2 + data
+apen = data4.append(666)
+apen2 = data4.append(input("masukkan: "))
+ins = data2.insert(1,2)#.insert(posisi index, objek)
+print("ini data list setelah diinsert", data2)
 print(data3)
 print(data4)
+
 #mengubah data
-data[0]="kamu"
-ubahdata=data
+data[0] = "kamu"
+ubahdata = data
 print(ubahdata)
+
+#menghapus data
+ls = [1,2,3]
+hapus = ls.remove(1)
+print("list dengan data yang sudah dihapus",ls)
+
 #list dalam list
-gabdata=data,data2
+gabdata = data,data2
 print(gabdata)
+
 #mengakses list dalam list
-aksesmulti=gabdata[1][1]
+aksesmulti = gabdata[1][1]
 print(aksesmulti)
+
+#sorting dan reverse
+lss = [1,3,4,2]
+sort = lss.sort()
+print("setelah disort", lss)
+preverse = lss.reverse()
+print("setelah direverse", lss)
 -------------------------------------------------------------
 #what i've learned this time is about If Else
 -------------------------------------------------------------
