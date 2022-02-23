@@ -430,3 +430,51 @@ print(dataheterogen.keys())
 print(dataheterogen.values())
 print(dataheterogen[3])
 #print(member1 + member2) ini error :D
+
+-------------------------------------------------------------
+#what i've learned this time is about def(function):argumen, return
+-------------------------------------------------------------
+#try and except menangkap error supaya program tidak close
+
+try:
+    x = 1/0#menangkap error
+    print(x)
+except:
+    print("tidak error \n")
+
+
+#-----cara1: menangkap error tanpa tau error apa
+while True:
+    try:
+        z = int(input("enter number = "))
+        print(z, "adalah angka")
+        break
+    except:
+        print("bukan angka. ulangi lagi")
+
+print("benar, anda memasukkan angka", z, "\n")
+
+
+#-----cara2: menangkap error dengan spesifik
+while True:
+    try: #jika ada error di indent try, maka akan dilempar di except
+        z = int(input("masukkan pembilang = "))
+        y = int(input("masukkan penyebut = "))
+        hasil = print(z/y) #jika z/y adalah 1/0, maka seharusnya ZeroDivisionError
+        break
+    except ValueError: #antisipasi error bukan angka
+        print("yang anda masukkan bukan angka")
+    except ZeroDivisionError: #antisipasi error penyebut 0
+        print("penyebut yang anda masukkan adalah 0. silahkan ganti!")
+    except Exception as e:
+        print(e) #menampilkan error apa
+        
+"""
+    type of exception error:
+    1. IOError
+    2. ImportError
+    3. ValueError
+    4. Division By Zero
+    5. KeyboardInterupted
+    6. EOFError
+"""
