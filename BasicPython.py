@@ -478,3 +478,23 @@ while True:
     5. KeyboardInterupted
     6. EOFError
 """
+-------------------------------------------------------------
+#what i've learned this time is about Global Scope & Local Scope
+-------------------------------------------------------------
+nama = "tegar"
+nama2 = "tegar"
+
+def ubah(name):
+    nama = name #secara default var nama adalah var local
+    print(nama)
+
+def ubah2(name):
+    global nama2
+    nama2 = name
+    print(nama2)
+
+ubah("tes")
+ubah2("tes")
+
+print("kita ubah nama menjadi", nama) #function tidak merubah nama, krn var di dalam function mmiliki var lokal
+print("kita ubah nama menjadi", nama2) #function merubah nama, krn var di dalam function mmiliki var global
