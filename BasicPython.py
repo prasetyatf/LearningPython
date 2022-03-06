@@ -140,6 +140,31 @@ print("setelah disort", lss)
 preverse = lss.reverse()
 print("setelah direverse", lss)
 -------------------------------------------------------------
+#what i've learned this time is about Stack
+-------------------------------------------------------------
+#stacking
+a = [1,2,3,4]
+
+a.pop()
+print(a)
+
+a.pop(1) #tidak error
+print(a)
+-------------------------------------------------------------
+#what i've learned this time is about Queue
+-------------------------------------------------------------
+#queueing
+from collections import deque
+
+a = deque([1,2,3,4])
+
+a.pop()
+print(a)
+
+a.popleft() #ini butuh module dequeq
+print(a)
+#pop.pop(1) ini akan error
+-------------------------------------------------------------
 #what i've learned this time is about If Else
 -------------------------------------------------------------
 data=[0,9,8,7,6,5]
